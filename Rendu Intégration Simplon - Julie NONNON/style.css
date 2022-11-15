@@ -1,0 +1,449 @@
+/* mise en forme site desktop */
+
+/* 1) MISE EN FORME HEADER */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #F1F5F8;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.allSection, header, footer{
+    width: 90%;
+} 
+
+header nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding: 2% 0;
+}
+
+.menu-items{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.menu-items li{
+    padding: 5%;
+    width: 10%;
+}
+
+.colorlink{
+    color: black;
+    text-decoration: none;
+}
+
+/* 2) MISE EN FORME SECTION INTRO */
+
+.sectionIntro{
+    background-color: white;
+    padding: 5% 0 5% 5%;
+    display: flex;
+    height: auto;
+}
+
+.sectionIntro .text{
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+h1{
+    color: #CF3034;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.buttonRed{
+    background-color: #CF3034;
+    border: #CF3034 solid 2px;
+    color: white;
+    /* commun mais saute quand je fais une div parente:*/
+    font-weight: bold;
+    margin: 1%;
+    padding: 2%;
+    border-radius: 5px;
+}
+
+.buttonBlank{
+    background-color: white;
+    border: #CF3034 solid 2px;
+    color: #CF3034;
+    /* commun mais saute quand je fais une div parente:*/
+    font-weight: bold;
+    margin: 1%;
+    padding: 2%;
+    border-radius: 5px;
+}
+
+.sectionIntro img{
+    width: 50%;
+}
+
+.imageAccueilSimplon{
+    height: 100%;
+}
+
+
+/* 3) MISE EN FORME SECTION IMPACT */
+
+h2{
+    font-size: 38px;
+    font-weight: bold;
+    margin: 2% 0;
+}
+
+.blocsChiffres{
+    gap: 2%;
+    display: flex;
+    align-content: center;
+    
+    margin: 0 10%;
+    min-height: 10%;
+}
+
+.blocWhite{
+    padding: 4% 2%;
+    margin: 1%;
+    background-color: white;
+    width: 25%;
+    height: auto;
+}
+
+.blocRed{
+    padding: 4% 2%;
+    margin: 1%;
+    background-color: #CF3034;
+    color: white;
+    width: 25%;
+    height: auto;
+}
+
+.pNumber{
+    color: #CF3034;
+    font-size: 64px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.pText {
+    font-size: 24px;
+}
+
+/* /////////////////////// */
+/* 4) MISE EN FORME TEMOIGNAGES */
+
+.textTemoignage1, .textTemoignage2, .textTemoignage3{
+    width: 60%;
+    text-align: justify;
+    font-weight: lighter;
+    font-size: 18px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 5% 5% 5%;
+}
+
+.sectionTemoignages img{
+    
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.photoTemoignage1 p, .photoTemoignage2 p, .photoTemoignage3 p{
+    text-align: center;
+    font-size: 24px;
+    margin: 10% 0 10% 0;
+
+}
+
+.guillemetRouge{
+    color: #CF3034;
+    font-size: 96px;
+    font-weight: bold;
+}
+
+.blocTemoignage1, .blocTemoignage2, .blocTemoignage3{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border:  solid grey 1px;
+}
+
+
+/* /////////////////////// */
+/* 5) MISE EN FORME APPRENTIS */
+
+.bgApprentis{
+    background: url(Images/img-apprentis.png) no-repeat center/cover;
+    height: 375px;
+    border: grey solid 2px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+}
+
+.textApprentis{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 40%;
+    padding: 3%;
+}
+
+.p1{
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.p2{
+    font-weight: lighter;
+    font-size: 18px;
+}
+
+.inputMoreInfo{
+    background-color: #CF3034;
+    color: white;
+    padding: 2% 5%;
+    border-radius: 5px;
+}
+
+.textApprentisMedia{
+    display: none;
+}
+
+
+/* /////////////////////// */
+/* 6) MISE EN FORME SOUTIENS */
+
+.logoSoutiens{
+    background-color: white;
+    padding: 5%;
+}
+
+.lecteurSoutiens{
+    text-align: center;
+}
+
+/* /////////////////////// */
+/* 7) MISE EN FORME FOOTER */
+
+/* Alignement éléments logo et emailing */
+
+footer{
+    background-color: #CF3034;
+    color: white;
+}
+
+.footerLogoMail{
+    display: flex;
+    justify-content: space-around;
+    padding: 5% 0;
+
+}
+
+.blocEmailing{
+    display: flex;
+    flex-direction: column;
+}
+
+.textEmailing{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputEmailing{
+    display: flex;
+    justify-content: space-between;
+    border: solid 1px white;
+    color: white;
+    background-color: #CF3034;
+}
+
+/* Alignement Réseaux sociaux */
+
+.footerRS{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 40% 5% 40%;
+}
+
+.footerRS img{
+    margin: 0 5%;
+}
+
+.textEmailing .p1{
+    font-size: 38px;
+}
+
+.textEmailing .p2{
+    font-size: 18px;
+}
+
+/* Alignement Nav Footer*/
+
+.footerLiens ul{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2% 0% 2%;
+    list-style: none;
+}
+
+.footerLiens ul li{
+    border-right: solid 1px;
+    padding: 0 2% 0 0;
+}
+
+/* bloc emailing caché pour responsive*/
+.blocEmailingMedia{
+    display: none;
+}
+
+
+
+
+/* //////////////////////// */
+/* mise en formes Slides section Témoignage */
+
+.containerFullSlider{
+    width: 100%;
+    display: block;
+    place-items: center;
+}
+
+  /* container principal des 3 slides - position relative */
+  .slider {
+    position: relative;
+
+    /* overflow: hidden; */
+
+    /* ^^^ le "overflow:hidden" une fois actif est sensé placer les slides les unes sur les autres comme un paquet de carte, mais au contraire tout mon carrousel disparait quand je l'active. Je le laisse en commentaire pour l'instant, les slides apparraissent donc les unes a cotés des autres. */
+
+  }
+
+/* Caractéristiques des 3 slides - positions absolues */
+
+.slide {
+
+    position: absolute;
+    transition: all 0.5s;
+
+ }
+/* Caractéristiques des bouttons */
+ .btn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    z-index: 10px;
+    cursor: pointer;
+    background-color: lightcoral;
+    font-size: 18px;
+ }
+
+ .btn:active {
+    transform: scale(1.1);
+  }
+  
+  .btn-prev {
+    top: 45%;
+    left: 2%;
+  }
+  
+  .btn-next {
+    top: 45%;
+    right: 2%;
+  }
+
+    
+/* //////////////////////// */
+/* mise en formes Ruban Partenaires */
+
+.rubanContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  :root {
+    --marquee-width: 80vw;
+    --marquee-height: 20vh;
+    /* --marquee-elements: 12; */ /* defined with JavaScript */
+    --marquee-elements-displayed: 5;
+    --marquee-element-width: calc(var(--marquee-width) / var(--marquee-elements-displayed));
+    --marquee-animation-duration: calc(var(--marquee-elements) * 3s);
+  }
+  
+  .marquee {
+    width: var(--marquee-width);
+    height: var(--marquee-height);
+    background-color: white;
+    color: #eee;
+    overflow: hidden;
+    position: relative;
+  }
+  .marquee:before, .marquee:after {
+    position: absolute;
+    top: 0;
+    width: 10rem;
+    height: 100%;
+    content: "";
+    z-index: 1;
+  }
+  /* .marquee:before {
+    left: 0;
+    background: linear-gradient(to right, #111 0%, transparent 100%);
+  }
+  .marquee:after {
+    right: 0;
+    background: linear-gradient(to left, #111 0%, transparent 100%);
+  } */
+  .marquee-content {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    animation: scrolling var(--marquee-animation-duration) linear infinite;
+  }
+  
+  .marquee-content:hover {
+    animation-play-state: paused;
+  }
+
+  @keyframes scrolling {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-1 * var(--marquee-element-width) * var(--marquee-elements))); }
+  }
+  .marquee-content li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    flex-shrink: 0;
+    width: var(--marquee-element-width);
+    max-height: 100%;
+    font-size: calc(var(--marquee-height)*3/4); /* 5rem; */
+    white-space: nowrap;
+  }
+  
+  .marquee-content li img {
+    width: 50%;
+  }
+  

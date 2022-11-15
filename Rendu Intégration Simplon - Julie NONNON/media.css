@@ -1,0 +1,170 @@
+/* ------------------------------------------------------- */
+/* Responsive Media Queries */
+/* ------------------------------------------------------- */
+
+/* responsive mobile */
+@media (max-width:850px){
+
+
+/* Responsive Header */
+
+    header nav ul li{
+        display: none;
+    }
+
+/* Burger menu animé mais non fonctionel et pas à sa place */
+    #burger {
+        width:30px;
+        height:2px;
+        background:#CF3034;
+        display:inline-block;
+        position:relative;
+      }
+
+    #burger::before, #burger::after {
+        content:'';
+        width:30px;
+        height:2px;
+        background:#CF3034;
+        display:inline-block;
+        position:absolute;
+        transform-origin: center;
+        transition: all 0.3s ease;
+        }
+
+    #burger::before {
+        top:-7px;
+        }
+
+    #burger::after {
+        top:7px;
+        }
+
+    #burger.open {
+    background:transparent; /* la barre du milieu disparait */
+    }
+
+    /* celles du haut et du bas s'inclinent pour former une croix */
+    #burger.open::before {
+    transform: rotate(45deg); 
+    top:0;
+    }
+
+    #burger.open::after {
+    transform: rotate(-45deg);
+    top:0;
+    }
+
+
+/* Responsive All Sections */
+
+    .allSection, header, footer{
+        width: min(850px, 100%);
+        height: auto;
+    }
+
+/* Responsive Section Intro */
+
+    .sectionIntro{
+            
+        padding: 5% 2% 5% 2%;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .sectionIntro .imageAccueilSimplon{
+        display: none;
+    }
+
+    .sectionIntro .button{
+        display: flex;
+        flex-direction: column;
+    }
+
+/* Responsive Section Impact */
+
+    .blocsChiffres{
+        display: flex;
+        flex-wrap: wrap;
+        /* le wrap ne s'applique qu'au bloc rouge */
+    }
+
+/* Responsive Section Temoignage */
+
+    .blocTemoignage1 img, .blocTemoignage2 img, .blocTemoignage3 img{
+        display: none;
+    }
+
+    .blocTemoignage1, .blocTemoignage2, .blocTemoignage3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        border:  solid grey 1px;
+    }
+
+    .textTemoignage1, .textTemoignage2, .textTemoignage3{
+        width: 90%;
+    }
+
+/* Responsive Section Apprentis */
+
+    .textApprentis{
+        display: none;
+    }
+
+    .textApprentisMedia{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 3%;
+    }
+
+/* Responsive Section Partenaires */
+
+:root {
+    --marquee-width: 100vw;
+    --marquee-height: 16vh;
+    --marquee-elements-displayed: 3;
+  }
+  .marquee:before, .marquee:after { width: 5rem; }
+
+
+/* Responsive Section Footer */
+
+    footer{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 10%;
+    }
+
+    .footerLogoMail{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 5% 0;
+    }
+
+    .footerLiens ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .inputEmailing{
+        width: 30%;
+    }
+
+    .blocEmailingMedia{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .blocEmailing{
+        display: none;
+    }
+
+}
